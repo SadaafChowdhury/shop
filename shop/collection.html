@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+
+.topnav {
+  
+  position: relative;
+  overflow: hidden;
+  
+  background-color: yellow;
+}
+.paddedClass{
+	padding-left:30%;
+	padding-right:30%;
+}
+
+.topnav a {
+  float: left;
+  color: #525252;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+
+  color: #000000;
+}
+
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.topnav-right {
+  float: right;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+  
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
+.paddedClass{
+	padding-left: 20%;
+	border: 3px solid green;
+	padding-right:20%;
+}
+</style>
+</head>
+<body class="paddedClass">
+
+<!-- Top navigation -->
+<div class="topnav">
+
+  <!-- Centered link -->
+  <div class="topnav-centered">
+    <a href="#home"><img style="width: 100px;" src="images/image0.png" alt="logo"></a>
+  </div>
+  
+  <!-- Left-aligned links (default) -->
+  <a href="#news">Home</a>
+  <a href="#contact">The Brand</a>
+
+</div>
+
+<div style="padding-left:16px">
+  <h2>Responsive Top Navigation with Centered and Right-Aligned Linkssponsive Top Nav
+  igation with Centered and Right-Aligned Linsponsive Top Navigation with Centered and Right-Aligned Linsponsive Top Navigation with Centered and Right-Aligned Lin</h2>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+</body>
+</html>

@@ -189,6 +189,7 @@
   .topnav a{
     float: none;
     display: block;
+	color:black;
   }
   
 }

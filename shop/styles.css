@@ -1,3 +1,10 @@
+.international{
+	background: #A583DC; 
+	text-align:center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
 .topnav {
   ​position: fixed;
   overflow: hidden;
@@ -20,12 +27,7 @@
 .topnav:hover{
 	background: #F1D0FF;
 }
-.international{
-	background: #A583DC; 
-	text-align:center;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
+
 <!--Footer-->
 
 .site-footer
@@ -192,4 +194,18 @@
 	color:black;
   }
   
+}
+.tooltiptext{
+	visibility:hidden;
+}
+/*celebrity image*/
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  padding-top: 75px;
+  background: #ccc;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
 }

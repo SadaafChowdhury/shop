@@ -21,9 +21,28 @@
   font-size: 17px;
 }
 
-.topnav a:hover {
-	color: #000000;
+a.left
+{
+    position: relative;
 }
+
+a.left:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+a.left:hover:before {
+  visibility: visible;
+  width: 100%;
+}
+
 .topnav:hover{
 	background: #F1D0FF;
 }
@@ -208,4 +227,17 @@
   text-align: center;
   color: #FFF;
   font-size: 3em;
+}
+body { 
+    animation: fadeInAnimation ease 2s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+} 
+@keyframes fadeInAnimation { 
+    0% { 
+      opacity: 0; 
+    } 
+    100% { 
+      opacity: 1; 
+    } 
 }

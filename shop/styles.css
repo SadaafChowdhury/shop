@@ -231,7 +231,8 @@ a.left:hover:before {
 body { 
     animation: fadeInAnimation ease 2s; 
     animation-iteration-count: 1; 
-    animation-fill-mode: forwards; 
+    animation-fill-mode: forwards;
+	line-height: 1.6;
 } 
 @keyframes fadeInAnimation { 
     0% { 
@@ -240,4 +241,24 @@ body {
     100% { 
       opacity: 1; 
     } 
+}
+/* Style the buttons collection page*/
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #A583DC;
+  cursor: pointer;
+  color: white;
+  margin: 5px;
+}
+
+.btn:hover {
+  background-color: #F1D0FF;
+}
+
+.btn.active {
+  border: 1px solid black;
+  color: black;
 }

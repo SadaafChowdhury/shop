@@ -11,13 +11,6 @@
 <title>Samrin Hassan</title>
 <style>
 .filterDiv {
-  float: left;
-  background-color: black;
-  color: #ffffff;
-  width: 400px;
-  line-height: 100px;
-  text-align: center;
-  margin: 2px;
   display: none;
 }
 
@@ -30,7 +23,31 @@
   overflow: hidden;
 }
 
+.product-container {
+  margin: auto;
+  width:80%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  border: 1px solid black;
+  padding: 10px;
+}
 
+.product-container > div {
+  border: 1px solid black;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .product-container {
+  margin: auto;
+  width:80%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10px;
+  border: 1px solid black;
+  padding: 10px;
+}
+}
 </style>
 
 </head>
@@ -55,17 +72,29 @@
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button><br>
   <span style="padding-top: 5px;margin-left: 5px;">Category</span><br>
-  <button class="btn" onclick="filterSelection('kurti')"> Kurti</button>
   <button class="btn" onclick="filterSelection('kameez')"> Kameez</button>
   <button class="btn" onclick="filterSelection('highLowGowns')"> High-Low Gowns</button>
   <button class="btn" onclick="filterSelection('drapeGowns')"> Drape Gowns</button>
-  <button class="btn" onclick="filterSelection('saree')"> Saree</button><br>
+  <button class="btn" onclick="filterSelection('saree')"> Saree</button>
+  <button class="btn" onclick="filterSelection('jumpsuit')"> Jumpsuit</button><br>
   <span style="margin-left: 5px;">Color</span><br>
-  <button class="btn" onclick="filterSelection('cars')"> Kurti</button>
-  <button class="btn" onclick="filterSelection('animals')"> Kameez</button>
-  <button class="btn" onclick="filterSelection('fruits')"> High-Low Gowns</button>
-  <button class="btn" onclick="filterSelection('colors')"> Drape Gowns</button>
-  <button class="btn" onclick="filterSelection('colors')"> Saree</button><br>
+  <button class="btn" onclick="filterSelection('white')"> whtie</button>
+  <button class="btn" onclick="filterSelection('black')"> black</button>
+  <button class="btn" onclick="filterSelection('blue')"> blue</button>
+  <button class="btn" onclick="filterSelection('green')"> green</button>
+  <button class="btn" onclick="filterSelection('red')"> red</button>
+  <button class="btn" onclick="filterSelection('pink')"> pink</button>
+  <button class="btn" onclick="filterSelection('orange')"> orange</button>
+  <button class="btn" onclick="filterSelection('yellow')"> yellow</button>
+  <button class="btn" onclick="filterSelection('purple')"> purple</button>
+  <button class="btn" onclick="filterSelection('maroon')"> maroon</button>
+  <button class="btn" onclick="filterSelection('beige')"> orange</button>
+  <button class="btn" onclick="filterSelection('brown')"> orange</button>
+  <button class="btn" onclick="filterSelection('nude')"> orange</button>
+  <button class="btn" onclick="filterSelection('peach')"> orange</button>
+  <button class="btn" onclick="filterSelection('teal')"> orange</button>
+  <button class="btn" onclick="filterSelection('lemon')"> orange</button><br>
+
   <span style="margin-left: 5px;">Price</span><br>
   <button class="btn" onclick="filterSelection('oneToTwok')"> 1000-2000</button>
   <button class="btn" onclick="filterSelection('twoToThreek')"> 2000-3000</button>
@@ -73,12 +102,9 @@
   <button class="btn" onclick="filterSelection('fourToFivek')"> 4000-5000</button>
   <button class="btn" onclick="filterSelection('fivePlus')"> 5000+</button>
 </div>
-
+<!--
 <div class="container">
-  <div class="filterDiv cars saree">
-  BMW
-  </div>
-  <div class="filterDiv colors fruits">Orange</div>
+  
   <div class="filterDiv cars">Volvo</div>
   <div class="filterDiv colors">Red</div>
   <div class="filterDiv cars animals">Mustang</div>
@@ -91,6 +117,177 @@
   <div class="filterDiv fruits">Lemon</div>
   <div class="filterDiv animals">Cow</div>
 </div>
+-->
+
+<div class="product-container">
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/1.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/2.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/3.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/4.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/5.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/6.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv jumpsuit"><img style="width: 100%;" src="products/7.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/8.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/9.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/10.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/11.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/12.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/13.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/14.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/15.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/16.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv drapeGowns"><img style="width: 100%;" src="products/17.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/18.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/19.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/20.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/21.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/22.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv drapeGowns"><img style="width: 100%;" src="products/24.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/25.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/26.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/27.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv saree"><img style="width: 100%;" src="products/28.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/29.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/30.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv drapeGowns"><img style="width: 100%;" src="products/31.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/32.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/33.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv drapeGowns"><img style="width: 100%;" src="products/34.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/35.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/36.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/37.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/38.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/39.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/40.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/41.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/42.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/43.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/44.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/45.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/46.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/47.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/48.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/49.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/50.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/51.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/52.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/53.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/54.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/55.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/56.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/57.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/58.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/59.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/60.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/61.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/62.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/63.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/64.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/65.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/66.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/67.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/68.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/69.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/70.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/71.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/72.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/73.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv saree"><img style="width: 100%;" src="products/74.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv drapeGowns"><img style="width: 100%;" src="products/75.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/76.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/77.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/78.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv drapeGowns"><img style="width: 100%;" src="products/79.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/80.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv drapeGowns"><img style="width: 100%;" src="products/81.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/82.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv kameez"><img style="width: 100%;" src="products/83.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+  
+  <div class="filterDiv highLowGowns"><img style="width: 100%;" src="products/84.jpg"><p style="color:#757575;">BDT. 2500</p></div>
+
+</div>
+
 
 <!--Footer-->
   

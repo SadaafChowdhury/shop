@@ -300,3 +300,20 @@ body {
   box-shadow: 2px 10px 12px rgba(0,0,0,0.5);
 }
 }
+
+.abtUs{
+	padding-left: 30%;
+	padding-right: 30%;
+}
+@media (max-width: 1300px) {
+  .abtUs{
+	padding-left: 20%;
+	padding-right: 20%;
+  }
+}
+@media (max-width: 500px) {
+ .abtUs{
+	padding-left: 10%;
+	padding-right: 10%;
+  }
+}
